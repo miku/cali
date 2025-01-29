@@ -11,3 +11,30 @@
 
 > let's start with a basic scaffold
 
+```
+cali/
+├── cmd/
+│   ├── calid/
+│   │   └── main.go         # Server daemon entry point
+│   └── cali/
+│       └── main.go         # CLI tool entry point
+├── internal/
+│   ├── api/
+│   │   ├── handlers.go     # HTTP handlers
+│   │   └── routes.go       # Route definitions
+│   ├── db/
+│   │   ├── schema.sql      # Database schema
+│   │   └── db.go          # Database operations
+│   ├── models/
+│   │   └── appointment.go  # Data models
+│   └── config/
+│       └── config.go       # Configuration handling
+├── web/
+│   ├── templates/
+│   │   └── index.html     # Web interface templates
+│   └── static/
+│       ├── css/
+│       └── js/
+├── go.mod
+└── README.md
+```
